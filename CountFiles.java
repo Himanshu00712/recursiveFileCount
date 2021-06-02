@@ -36,9 +36,7 @@ public class CountFiles {
 			}
 			return;
 		}
-		// tabs for internal levels
-		// for (int i = 0; i < level; i++)
-		// System.out.print("-");
+		
 
 		// for files
 		if (arr[index].isFile()) {
