@@ -4,6 +4,7 @@ import java.io.File;
 public class CountFiles {
 
 	static int sum = 0;
+	static int total = 0;
 
 	public static void main(String[] args) {
 
@@ -16,6 +17,9 @@ public class CountFiles {
 			File arr[] = f.listFiles();
 
 			RecursivePrint(arr, 0, 0, args[1]);
+			
+			System.out.println();
+			System.out.println("Total Files : "+total);
 
 		}
 	}
@@ -28,6 +32,7 @@ public class CountFiles {
 			if (sum != 0) {
 				System.out.println(type + "_count : " + sum);
 				System.out.println("--------------------------------------");
+				total = total+sum;
 			}
 			return;
 		}
